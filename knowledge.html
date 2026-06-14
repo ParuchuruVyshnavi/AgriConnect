@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Knowledge Hub | AgriConnect</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-slate-950 text-white">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
+
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-3xl font-bold text-green-400">
+      🌾 AgriConnect
+    </h1>
+
+    <!-- Desktop Menu -->
+
+    <ul class="hidden lg:flex gap-8 text-slate-300">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="equipment.html">Equipment</a></li>
+      <li><a href="labour.html">Labour</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="water-sharing.html">Water Sharing</a></li>
+      <li><a href="knowledge.html">Knowledge Hub</a></li>
+      <li><a href="crop-loss.html">Crop Loss</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <!-- Mobile Menu Button -->
+
+    <button
+      id="menuBtn"
+      class="lg:hidden text-3xl text-white">
+
+      <i class="bi bi-list"></i>
+
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+
+  <div
+    id="mobileMenu"
+    class="hidden lg:hidden bg-slate-900 border-t border-slate-800">
+
+    <ul class="flex flex-col p-6 gap-4 text-white">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="equipment.html">Equipment</a></li>
+      <li><a href="labour.html">Labour</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="water-sharing.html">Water Sharing</a></li>
+      <li><a href="knowledge.html">Knowledge Hub</a></li>
+      <li><a href="crop-loss.html">Crop Loss</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+    <!-- HERO -->
+
+    <section class="pt-36 pb-20 text-center">
+
+        <div class="container mx-auto px-6">
+
+            <h1 class="text-6xl font-bold">
+
+                Knowledge
+
+                <span class="text-green-400">
+
+                    Hub
+
+                </span>
+
+            </h1>
+
+            <p class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+                Learn modern farming techniques, crop management,
+                government schemes and sustainable agriculture practices.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH SECTION -->
+
+    <section class="pb-20">
+
+        <div class="container mx-auto px-6">
+
+            <div class="glass p-6 rounded-3xl">
+
+                <div class="grid md:grid-cols-4 gap-4">
+
+                    <input id="articleSearch" type="text" placeholder="Search Articles..."
+                        class="bg-slate-900 p-4 rounded-xl">
+
+                    <select id="categoryFilter" class="bg-slate-900 p-4 rounded-xl">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="organic">
+                            Organic Farming
+                        </option>
+
+                        <option value="irrigation">
+                            Irrigation
+                        </option>
+
+                        <option value="pest">
+                            Pest Management
+                        </option>
+
+                        <option value="government">
+                            Government Schemes
+                        </option>
+
+                    </select>
+
+                    <button onclick="searchArticles()" class="primary-btn rounded-xl">
+
+                        Search
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURED ARTICLES -->
+
+    <section id="articles" class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+
+                Featured Articles
+
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- ARTICLE 1 -->
+
+                <div class="feature-card article-card p-6 rounded-3xl" data-category="organic">
+
+                    <i class="bi bi-tree-fill text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        Organic Farming Guide
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        Learn eco-friendly farming methods and improve soil health.
+
+                    </p>
+
+                    <a href="#" onclick="showArticle('organic')" class="text-green-400 mt-4 inline-block">
+
+                        Read More →
+
+                    </a>
+
+                </div>
+
+                <!-- ARTICLE 2 -->
+
+                <div class="feature-card article-card p-6 rounded-3xl" data-category="irrigation">
+
+                    <i class="bi bi-droplet-half text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        Drip Irrigation
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        Save water and increase productivity.
+
+                    </p>
+
+                    <a href="#" onclick="showArticle('irrigation')" class="text-green-400 mt-4 inline-block">
+
+                        Read More →
+
+                    </a>
+
+                </div>
+
+                <!-- ARTICLE 3 -->
+
+                <div class="feature-card article-card p-6 rounded-3xl" data-category="pest">
+
+                    <i class="bi bi-bug-fill text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        Pest Management
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        Protect crops from pests using safe methods.
+
+                    </p>
+
+                    <a href="#" onclick="showArticle('pest')" class="text-green-400 mt-4 inline-block">
+
+                        Read More →
+
+                    </a>
+
+                </div>
+
+                <!-- ARTICLE 4 -->
+
+                <div class="feature-card article-card p-6 rounded-3xl" data-category="organic">
+
+                    <i class="bi bi-flower1 text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        Organic Fertilizers
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        Natural alternatives to chemical fertilizers.
+
+                    </p>
+
+                    <a href="#" onclick="showArticle('fertilizer')" class="text-green-400 mt-4 inline-block">
+
+                        Read More →
+
+                    </a>
+
+                </div>
+
+                <!-- ARTICLE 5 -->
+
+                <div class="feature-card article-card p-6 rounded-3xl" data-category="irrigation">
+
+                    <i class="bi bi-water text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        Water Conservation
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        Reduce water wastage in farming.
+
+                    </p>
+
+                    <a href="#" onclick="showArticle('water')" class="text-green-400 mt-4 inline-block">
+
+                        Read More →
+
+                    </a>
+
+                </div>
+
+                <!-- ARTICLE 6 -->
+
+                <div class="feature-card article-card p-6 rounded-3xl" data-category="government">
+
+                    <i class="bi bi-bank text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        PM Kisan Scheme
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        Financial support for eligible farmers.
+
+                    </p>
+
+                    <a href="#" onclick="showArticle('pmkisan')" class="text-green-400 mt-4 inline-block">
+
+                        Read More →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VIDEO TUTORIALS -->
+
+    <section class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+
+                Video Tutorials
+
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div onclick="openVideo('https://www.youtube.com/results?search_query=modern+farming+techniques')"
+                    class="glass rounded-3xl overflow-hidden cursor-pointer hover:scale-105 transition">
+                    <div class="relative">
+
+                        <img src="images/modern-farming.jpg" class="w-full h-56 object-cover">
+
+                        <i
+                            class="bi bi-play-circle-fill absolute inset-0 flex items-center justify-center text-7xl text-white">
+                        </i>
+
+                    </div>
+
+
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-semibold">
+                            Modern Farming Techniques
+                        </h3>
+
+                        <p class="text-slate-400 mt-2">
+                            Learn advanced farming methods.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div onclick="openVideo('https://www.youtube.com/results?search_query=drip+irrigation')"
+                    class="glass rounded-3xl overflow-hidden cursor-pointer hover:scale-105 transition">
+
+
+                    <div class="relative">
+
+                        <img src="images/Drip-Irrigation.jpg" class="w-full h-56 object-cover">
+
+                        <i
+                            class="bi bi-play-circle-fill absolute inset-0 flex items-center justify-center text-7xl text-white">
+                        </i>
+
+                    </div>
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-semibold">
+                            Drip Irrigation Guide
+                        </h3>
+
+                        <p class="text-slate-400 mt-2">
+                            Save water efficiently.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div onclick="openVideo('https://www.youtube.com/results?search_query=organic+farming')"
+                    class="glass rounded-3xl overflow-hidden cursor-pointer hover:scale-105 transition">
+
+
+                    <div class="relative">
+
+                        <img src="images/organic-farming.jpg" class="w-full h-56 object-cover">
+
+                        <i
+                            class="bi bi-play-circle-fill absolute inset-0 flex items-center justify-center text-7xl text-white">
+                        </i>
+
+                    </div>
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-semibold">
+                            Organic Farming
+                        </h3>
+
+                        <p class="text-slate-400 mt-2">
+                            Chemical-free farming practices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div onclick="openVideo('https://www.youtube.com/results?search_query=pest+management+in+agriculture')"
+                    class="glass rounded-3xl overflow-hidden cursor-pointer hover:scale-105 transition">
+
+
+                    <div class="relative">
+
+                        <img src="images/pest-management.webp" class="w-full h-56 object-cover">
+
+                        <i
+                            class="bi bi-play-circle-fill absolute inset-0 flex items-center justify-center text-7xl text-white">
+                        </i>
+
+                    </div>
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-semibold">
+                            Pest Management
+                        </h3>
+
+                        <p class="text-slate-400 mt-2">
+                            Protect crops from harmful pests.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div onclick="openVideo('https://www.youtube.com/results?search_query=soil+health+management')"
+                    class="glass rounded-3xl overflow-hidden cursor-pointer hover:scale-105 transition">
+
+
+                    <div class="relative">
+
+                        <img src="images/soil-health.webp" class="w-full h-56 object-cover">
+
+                        <i
+                            class="bi bi-play-circle-fill absolute inset-0 flex items-center justify-center text-7xl text-white">
+                        </i>
+
+                    </div>
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-semibold">
+                            Soil Health Management
+                        </h3>
+
+                        <p class="text-slate-400 mt-2">
+                            Improve soil fertility naturally.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div onclick="openVideo('https://www.youtube.com/results?search_query=greenhouse+farming')"
+                    class="glass rounded-3xl overflow-hidden cursor-pointer hover:scale-105 transition">
+
+
+                    <div class="relative">
+
+                        <img src="images/Greenhouse.gif" class="w-full h-56 object-cover">
+
+                        <i
+                            class="bi bi-play-circle-fill absolute inset-0 flex items-center justify-center text-7xl text-white">
+                        </i>
+
+                    </div>
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-semibold">
+                            Greenhouse Farming
+                        </h3>
+
+                        <p class="text-slate-400 mt-2">
+                            Controlled environment farming.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GOVERNMENT SCHEMES -->
+
+    <section id="schemes" class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <div class="glass p-10 rounded-3xl">
+
+                <h2 class="text-4xl font-bold mb-8">
+
+                    Government Awareness
+
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <div class="feature-card article-card p-6 rounded-3xl" data-category="government">
+
+                        <i class="bi bi-bank text-5xl text-green-400"></i>
+
+                        <h3 class="text-2xl mt-4">
+
+                            PM Kisan
+
+                        </h3>
+
+                        <p class="text-slate-400 mt-3">
+
+                            Income support scheme for farmers.
+
+                        </p>
+
+                        <a href="#" onclick="showArticle('pmkisan')" class="text-green-400 mt-4 inline-block">
+
+                            Read More →
+
+                        </a>
+
+                    </div>
+
+                    <div class="feature-card article-card p-6 rounded-3xl" data-category="government">
+
+                        <i class="bi bi-shield-check text-5xl text-green-400"></i>
+
+                        <h3 class="text-2xl mt-4">
+
+                            Crop Insurance
+
+                        </h3>
+
+                        <p class="text-slate-400 mt-3">
+
+                            Protection against crop losses.
+
+                        </p>
+
+                        <a href="#" onclick="showArticle('insurance')" class="text-green-400 mt-4 inline-block">
+
+                            Read More →
+
+                        </a>
+
+                    </div>
+
+                    <div class="feature-card article-card p-6 rounded-3xl" data-category="government">
+
+                        <i class="bi bi-cash-coin text-5xl text-green-400"></i>
+
+                        <h3 class="text-2xl mt-4">
+
+                            Subsidies
+
+                        </h3>
+
+                        <p class="text-slate-400 mt-3">
+
+                            Government support and benefits.
+
+                        </p>
+
+                        <a href="#" onclick="showArticle('subsidy')" class="text-green-400 mt-4 inline-block">
+
+                            Read More →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <div class="glass p-12 rounded-3xl text-center">
+
+                <h2 class="text-4xl font-bold">
+
+                    Keep Learning, Keep Growing
+
+                </h2>
+
+                <p class="text-slate-400 mt-4">
+
+                    Access the latest agricultural knowledge and best practices.
+
+                </p>
+
+                <button onclick="scrollToArticles()" class="primary-btn px-8 py-4 rounded-full mt-6">
+
+                    Explore More
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ARTICLE MODAL -->
+
+    <div id="articleModal"
+        class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+
+        <div class="glass p-8 rounded-3xl max-w-2xl w-full relative">
+
+            <button onclick="closeArticle()" class="absolute top-4 right-4 text-red-400 text-2xl">
+
+                <i class="bi bi-x-circle-fill"></i>
+
+            </button>
+
+            <h2 id="modalTitle" class="text-3xl font-bold mb-4">
+
+            </h2>
+
+            <p id="modalContent" class="text-slate-300 leading-8">
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+     <footer class="bg-slate-900 border-t border-slate-800 pt-20">
+
+    <div class="container mx-auto px-6">
+
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+        <!-- Brand -->
+
+        <div>
+
+          <h2 class="text-3xl font-bold text-green-400">
+
+            🌾 AgriConnect
+
+          </h2>
+
+          <p class="text-slate-400 mt-6 leading-8">
+
+            Empowering farmers through technology,
+            resources and community support.
+
+          </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Quick Links
+
+          </h3>
+
+          <ul class="space-y-4 text-slate-400">
+
+            <li>
+              <a href="index.html" class="hover:text-green-400">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="knowledge.html#articles" class="hover:text-green-400">
+                Articles
+              </a>
+            </li>
+
+            <li>
+              <a href="knowledge.html#schemes" class="hover:text-green-400">
+                Schemes
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="hover:text-green-400">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Services -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Our Services
+
+          </h3>
+
+          <ul class="space-y-4 text-slate-400">
+
+            <li>
+              <a href="equipment.html" class="hover:text-green-400">
+                Equipment Rental
+              </a>
+            </li>
+
+            <li>
+              <a href="labour.html" class="hover:text-green-400">
+                Labour Connect
+              </a>
+            </li>
+
+            <li>
+              <a href="water-sharing.html" class="hover:text-green-400">
+                Water Sharing
+              </a>
+            </li>
+
+            <li>
+              <a href="marketplace.html" class="hover:text-green-400">
+                Marketplace
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-loss.html" class="hover:text-green-400">
+                Crop Loss Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="knowledge.html" class="hover:text-green-400">
+                Knowledge Hub
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Contact Info -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Contact Info
+
+          </h3>
+
+          <div class="space-y-4 text-slate-400">
+
+            <p>
+              <i class="bi bi-geo-alt-fill text-green-400"></i>
+              India
+            </p>
+
+            <p>
+              <i class="bi bi-envelope-fill text-green-400"></i>
+              support@agriconnect.com
+            </p>
+
+            <p>
+              <i class="bi bi-telephone-fill text-green-400"></i>
+              +91 9876543210
+            </p>
+
+            <p>
+              <i class="bi bi-clock-fill text-green-400"></i>
+              Mon - Sat : 9 AM - 6 PM
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer -->
+
+      <div class="border-t border-slate-800 mt-16 py-8 flex flex-col md:flex-row justify-between items-center">
+
+        <p class="text-slate-500">
+
+          © 2026 AgriConnect. All Rights Reserved.
+
+        </p>
+
+        <p class="text-slate-500 mt-4 md:mt-0">
+
+          Made with ❤️ for Farmers
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

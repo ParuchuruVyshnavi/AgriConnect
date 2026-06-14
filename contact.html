@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | AgriConnect</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-slate-950 text-white">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
+
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-3xl font-bold text-green-400">
+      🌾 AgriConnect
+    </h1>
+
+    <!-- Desktop Menu -->
+
+    <ul class="hidden lg:flex gap-8 text-slate-300">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="equipment.html">Equipment</a></li>
+      <li><a href="labour.html">Labour</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="water-sharing.html">Water Sharing</a></li>
+      <li><a href="knowledge.html">Knowledge Hub</a></li>
+      <li><a href="crop-loss.html">Crop Loss</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <!-- Mobile Menu Button -->
+
+    <button
+      id="menuBtn"
+      class="lg:hidden text-3xl text-white">
+
+      <i class="bi bi-list"></i>
+
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+
+  <div
+    id="mobileMenu"
+    class="hidden lg:hidden bg-slate-900 border-t border-slate-800">
+
+    <ul class="flex flex-col p-6 gap-4 text-white">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="equipment.html">Equipment</a></li>
+      <li><a href="labour.html">Labour</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="water-sharing.html">Water Sharing</a></li>
+      <li><a href="knowledge.html">Knowledge Hub</a></li>
+      <li><a href="crop-loss.html">Crop Loss</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+    <!-- HERO -->
+
+    <section class="pt-36 pb-20 text-center">
+
+        <h1 class="text-6xl font-bold">
+
+            Contact
+
+            <span class="text-green-400">
+
+                Us
+
+            </span>
+
+        </h1>
+
+        <p class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+            Need help? Have suggestions? Want to collaborate?
+            Reach out to the AgriConnect team.
+
+        </p>
+
+    </section>
+
+    <!-- CONTACT INFO -->
+
+    <section class="pb-20">
+
+        <div class="container mx-auto px-6">
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="glass p-8 rounded-3xl text-center">
+
+                    <i class="bi bi-telephone-fill text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        Helpline
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        1800-123-4567
+
+                    </p>
+
+                </div>
+
+                <div class="glass p-8 rounded-3xl text-center">
+
+                    <i class="bi bi-envelope-fill text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        Email
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        support@agriconnect.com
+
+                    </p>
+
+                </div>
+
+                <div class="glass p-8 rounded-3xl text-center">
+
+                    <i class="bi bi-geo-alt-fill text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+
+                        Location
+
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+
+                        India
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <div class="glass p-10 rounded-3xl">
+
+                <h2 class="text-3xl font-bold mb-6">
+
+                    Support Hours
+
+                </h2>
+
+                <div class="space-y-3 text-slate-300">
+
+                    <p>🕘 Monday - Friday : 9:00 AM - 6:00 PM</p>
+
+                    <p>🕙 Saturday : 10:00 AM - 4:00 PM</p>
+
+                    <p>🚨 Sunday : Emergency Support Only</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT FORM -->
+
+    <section class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <div class="glass p-10 rounded-3xl">
+
+                <h2 class="text-4xl font-bold mb-8">
+
+                    Send Message
+
+                </h2>
+                <form id="contactForm">
+
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <input type="text" placeholder="Your Name" required class="bg-slate-900 p-4 rounded-xl">
+
+                        <input type="email" placeholder="Your Email" required class="bg-slate-900 p-4 rounded-xl">
+
+                        <select required class="bg-slate-900 p-4 rounded-xl">
+
+                            <option value="">
+                                Select State
+                            </option>
+
+                            <option>
+                                Andhra Pradesh
+                            </option>
+
+                            <option>
+                                Telangana
+                            </option>
+
+                            <option>
+                                Tamil Nadu
+                            </option>
+
+                            <option>
+                                Karnataka
+                            </option>
+
+                            <option>
+                                Kerala
+                            </option>
+
+                            <option>
+                                Maharashtra
+                            </option>
+
+                        </select>
+
+                        <input type="text" placeholder="Subject" required
+                            class="bg-slate-900 p-4 rounded-xl md:col-span-2">
+
+                    </div>
+
+                    <textarea placeholder="Write your message..." required
+                        class="bg-slate-900 p-4 rounded-xl w-full h-40 mt-6"></textarea>
+
+                    <button type="submit" class="primary-btn px-8 py-4 rounded-xl mt-8">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section  id="faq" class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+
+                Frequently Asked Questions
+
+            </h2>
+
+            <div class="space-y-6">
+
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold">
+                        How can I rent equipment?
+                    </h3>
+                    <p class="text-slate-400 mt-2">
+                        Go to Equipment page and contact the owner.
+                    </p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold">
+                        How can I find workers?
+                    </h3>
+                    <p class="text-slate-400 mt-2">
+                        Visit Labour Connect and browse available workers.
+                    </p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold">
+                        Can I report crop damage?
+                    </h3>
+                    <p class="text-slate-400 mt-2">
+                        Yes, use the Crop Loss Reporting module.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SUPPORT CATEGORIES -->
+
+    <section class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Support Categories
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="glass p-8 rounded-3xl text-center">
+
+                    <i class="bi bi-headset text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+                        Technical Support
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+                        Website and platform related help.
+                    </p>
+
+                </div>
+
+                <div class="glass p-8 rounded-3xl text-center">
+
+                    <i class="bi bi-people-fill text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+                        Farmer Assistance
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+                        Help with equipment, labour and reports.
+                    </p>
+
+                </div>
+
+                <div class="glass p-8 rounded-3xl text-center">
+
+                    <i class="bi bi-briefcase-fill text-5xl text-green-400"></i>
+
+                    <h3 class="text-2xl mt-5">
+                        Partnerships
+                    </h3>
+
+                    <p class="text-slate-400 mt-3">
+                        Collaborate with AgriConnect.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+
+    <section class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <div class="glass p-10 rounded-3xl text-center">
+
+                <h2 class="text-4xl font-bold">
+
+                    Stay Updated
+
+                </h2>
+
+                <p class="text-slate-400 mt-4">
+
+                    Get latest farming tips and updates.
+
+                </p>
+                <form id="newsletterForm">
+
+                    <div class="flex flex-col md:flex-row gap-4 mt-8">
+
+                        <input id="newsletterEmail" type="email" required placeholder="Enter your email"
+                            class="bg-slate-900 p-4 rounded-xl flex-1">
+
+                        <button type="submit" class="primary-btn px-8 py-4 rounded-xl">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </form>
+                <div id="newsletterModal"
+                    class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
+
+                    <div class="glass p-10 rounded-3xl text-center max-w-md">
+
+                        <i class="bi bi-envelope-check-fill text-7xl text-green-400">
+                        </i>
+
+                        <h2 class="text-3xl font-bold mt-4">
+
+                            Subscribed Successfully!
+
+                        </h2>
+
+                        <p class="text-slate-400 mt-3">
+
+                            Thank you for subscribing to AgriConnect updates.
+
+                        </p>
+
+                        <button onclick="closeNewsletterModal()" class="primary-btn px-8 py-3 rounded-xl mt-6">
+
+                            OK
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEEDBACK -->
+
+    <section  id="feedback" class="pb-24">
+
+        <div class="container mx-auto px-6">
+
+            <div class="glass p-12 rounded-3xl text-center">
+
+                <h2 class="text-4xl font-bold">
+
+                    Share Your Feedback
+
+                </h2>
+
+                <p class="text-slate-400 mt-4">
+
+                    Your feedback helps us improve AgriConnect.
+
+                </p>
+                <!-- Feedback Modal -->
+                <button onclick="openFeedbackModal()" class="primary-btn px-8 py-4 rounded-full mt-6">
+
+                    Submit Feedback
+
+                </button>
+                <div id="feedbackModal"
+                    class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+
+                    <div class="glass rounded-3xl p-8 w-full max-w-2xl relative">
+
+                        <!-- Close Button -->
+
+                        <button onclick="closeFeedbackModal()"
+                            class="absolute top-4 right-4 text-2xl text-red-400 hover:text-red-500">
+
+                            <i class="bi bi-x-circle-fill"></i>
+
+                        </button>
+
+                        <h2 class="text-4xl font-bold mb-6">
+
+                            Share Your Feedback
+
+                        </h2>
+
+                        <form id="feedbackForm">
+
+                            <div class="grid md:grid-cols-2 gap-4">
+
+                                <input type="text" placeholder="Your Name" required
+                                    class="bg-slate-900 p-4 rounded-xl w-full">
+
+                                <input type="email" placeholder="Your Email" required
+                                    class="bg-slate-900 p-4 rounded-xl w-full">
+
+                            </div>
+
+                            <input type="text" placeholder="Subject" class="bg-slate-900 p-4 rounded-xl w-full mt-4">
+
+                            <textarea placeholder="Write your feedback..." required
+                                class="bg-slate-900 p-4 rounded-xl w-full h-40 mt-4"></textarea>
+
+                            <button type="submit" class="primary-btn px-8 py-4 rounded-xl mt-6 w-full">
+
+                                Submit Feedback
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-slate-900 border-t border-slate-800 pt-20">
+
+    <div class="container mx-auto px-6">
+
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+        <!-- Brand -->
+
+        <div>
+
+          <h2 class="text-3xl font-bold text-green-400">
+
+            🌾 AgriConnect
+
+          </h2>
+
+          <p class="text-slate-400 mt-6 leading-8">
+
+            Empowering farmers through technology,
+            resources and community support.
+
+          </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Quick Links
+
+          </h3>
+
+          <ul class="space-y-4 text-slate-400">
+
+            <li>
+              <a href="index.html" class="hover:text-green-400">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html#faq" class="hover:text-green-400">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html#feedback" class="hover:text-green-400">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="hover:text-green-400">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Services -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Our Services
+
+          </h3>
+
+          <ul class="space-y-4 text-slate-400">
+
+            <li>
+              <a href="equipment.html" class="hover:text-green-400">
+                Equipment Rental
+              </a>
+            </li>
+
+            <li>
+              <a href="labour.html" class="hover:text-green-400">
+                Labour Connect
+              </a>
+            </li>
+
+            <li>
+              <a href="water-sharing.html" class="hover:text-green-400">
+                Water Sharing
+              </a>
+            </li>
+
+            <li>
+              <a href="marketplace.html" class="hover:text-green-400">
+                Marketplace
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-loss.html" class="hover:text-green-400">
+                Crop Loss Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="knowledge.html" class="hover:text-green-400">
+                Knowledge Hub
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Contact Info -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Contact Info
+
+          </h3>
+
+          <div class="space-y-4 text-slate-400">
+
+            <p>
+              <i class="bi bi-geo-alt-fill text-green-400"></i>
+              India
+            </p>
+
+            <p>
+              <i class="bi bi-envelope-fill text-green-400"></i>
+              support@agriconnect.com
+            </p>
+
+            <p>
+              <i class="bi bi-telephone-fill text-green-400"></i>
+              +91 9876543210
+            </p>
+
+            <p>
+              <i class="bi bi-clock-fill text-green-400"></i>
+              Mon - Sat : 9 AM - 6 PM
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer -->
+
+      <div class="border-t border-slate-800 mt-16 py-8 flex flex-col md:flex-row justify-between items-center">
+
+        <p class="text-slate-500">
+
+          © 2026 AgriConnect. All Rights Reserved.
+
+        </p>
+
+        <p class="text-slate-500 mt-4 md:mt-0">
+
+          Made with ❤️ for Farmers
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

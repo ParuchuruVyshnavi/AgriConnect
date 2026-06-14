@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crop Loss Reports | AgriConnect</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-slate-950 text-white">
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
+
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-3xl font-bold text-green-400">
+      🌾 AgriConnect
+    </h1>
+
+    <!-- Desktop Menu -->
+
+    <ul class="hidden lg:flex gap-8 text-slate-300">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="equipment.html">Equipment</a></li>
+      <li><a href="labour.html">Labour</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="water-sharing.html">Water Sharing</a></li>
+      <li><a href="knowledge.html">Knowledge Hub</a></li>
+      <li><a href="crop-loss.html">Crop Loss</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <!-- Mobile Menu Button -->
+
+    <button
+      id="menuBtn"
+      class="lg:hidden text-3xl text-white">
+
+      <i class="bi bi-list"></i>
+
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+
+  <div
+    id="mobileMenu"
+    class="hidden lg:hidden bg-slate-900 border-t border-slate-800">
+
+    <ul class="flex flex-col p-6 gap-4 text-white">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="equipment.html">Equipment</a></li>
+      <li><a href="labour.html">Labour</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="water-sharing.html">Water Sharing</a></li>
+      <li><a href="knowledge.html">Knowledge Hub</a></li>
+      <li><a href="crop-loss.html">Crop Loss</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="pt-36 pb-24">
+
+<div class="container mx-auto px-6">
+
+<div
+class="glass rounded-[40px] p-12 lg:p-16">
+
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+
+<!-- LEFT -->
+
+<div>
+
+<span
+class="bg-red-500/20 text-red-400 px-5 py-2 rounded-full">
+
+🌾 Crop Loss Management
+
+</span>
+
+<h1
+class="text-5xl md:text-7xl font-bold mt-8 leading-tight">
+
+Report
+
+<span class="text-green-400">
+
+Crop Damage
+
+</span>
+
+Quickly
+
+</h1>
+
+<p
+class="text-slate-400 text-lg mt-8 leading-8">
+
+Submit crop damage reports caused by floods,
+droughts, cyclones, pests and diseases.
+
+Connect with government assistance programs
+and insurance support.
+
+</p>
+
+<div class="flex flex-wrap gap-4 mt-10">
+
+<a
+href="#report-form"
+class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full transition">
+
+Report Damage
+
+</a>
+
+<a
+href="#assistance"
+class="border border-green-500 hover:bg-green-500 px-8 py-4 rounded-full transition">
+
+Get Assistance
+
+</a>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="relative">
+
+<img
+src="images/crop-loss-hero.webp"
+class="rounded-[30px] w-full h-[450px] object-cover">
+
+<div
+class="absolute bottom-6 left-6 glass px-6 py-4 rounded-2xl">
+
+🌾 1000+ Reports Processed
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QUICK STATISTICS -->
+
+<section class="pb-24">
+
+<div class="container mx-auto px-6">
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<!-- CARD 1 -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-2 transition">
+
+<div class="text-5xl">
+
+📋
+
+</div>
+
+<h2
+class="text-5xl font-bold text-green-400 mt-4">
+
+125+
+
+</h2>
+
+<p
+class="text-slate-400 mt-3">
+
+Reports Submitted
+
+</p>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-2 transition">
+
+<div class="text-5xl">
+
+✅
+
+</div>
+
+<h2
+class="text-5xl font-bold text-green-400 mt-4">
+
+78+
+
+</h2>
+
+<p
+class="text-slate-400 mt-3">
+
+Verified Cases
+
+</p>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-2 transition">
+
+<div class="text-5xl">
+
+🏘️
+
+</div>
+
+<h2
+class="text-5xl font-bold text-green-400 mt-4">
+
+25+
+
+</h2>
+
+<p
+class="text-slate-400 mt-3">
+
+Villages Covered
+
+</p>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-2 transition">
+
+<div class="text-5xl">
+
+🤝
+
+</div>
+
+<h2
+class="text-5xl font-bold text-green-400 mt-4">
+
+50+
+
+</h2>
+
+<p
+class="text-slate-400 mt-3">
+
+Assistance Requests
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+ 
+<!-- COMMON CROP DAMAGE CAUSES -->
+
+<section class="pb-24">
+
+<div class="container mx-auto px-6">
+
+<div class="text-center mb-16">
+
+<span
+class="bg-red-500/20 text-red-400 px-5 py-2 rounded-full">
+
+Damage Causes
+
+</span>
+
+<h2
+class="text-5xl font-bold mt-6">
+
+Common
+
+<span class="text-green-400">
+
+Crop Damage Causes
+
+</span>
+
+</h2>
+
+<p
+class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+Identify the major reasons behind crop damage and report them accurately.
+
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<!-- Flood -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-3 transition">
+
+<div
+class="w-24 h-24 mx-auto rounded-full bg-blue-500/20 flex items-center justify-center text-5xl">
+
+🌧️
+
+</div>
+
+<h3
+class="text-2xl font-bold mt-6">
+
+Floods
+
+</h3>
+
+<p
+class="text-slate-400 mt-4">
+
+Heavy rainfall and flooding can destroy crops and farmland.
+
+</p>
+
+</div>
+
+<!-- Drought -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-3 transition">
+
+<div
+class="w-24 h-24 mx-auto rounded-full bg-yellow-500/20 flex items-center justify-center text-5xl">
+
+☀️
+
+</div>
+
+<h3
+class="text-2xl font-bold mt-6">
+
+Drought
+
+</h3>
+
+<p
+class="text-slate-400 mt-4">
+
+Lack of rainfall affects crop growth and productivity.
+
+</p>
+
+</div>
+
+<!-- Pest Attack -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-3 transition">
+
+<div
+class="w-24 h-24 mx-auto rounded-full bg-red-500/20 flex items-center justify-center text-5xl">
+
+🦗
+
+</div>
+
+<h3
+class="text-2xl font-bold mt-6">
+
+Pest Attacks
+
+</h3>
+
+<p
+class="text-slate-400 mt-4">
+
+Insects and pests can severely damage crops if untreated.
+
+</p>
+
+</div>
+
+<!-- Diseases -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-3 transition">
+
+<div
+class="w-24 h-24 mx-auto rounded-full bg-green-500/20 flex items-center justify-center text-5xl">
+
+🦠
+
+</div>
+
+<h3
+class="text-2xl font-bold mt-6">
+
+Diseases
+
+</h3>
+
+<p
+class="text-slate-400 mt-4">
+
+Plant diseases can spread quickly and reduce crop yield.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REPORT FORM -->
+
+<section id="report-form" class="pb-28">
+
+<div class="container mx-auto px-6">
+
+<div class="glass rounded-[40px] p-12">
+
+<div class="text-center mb-12">
+
+<span
+class="bg-red-500/20 text-red-400 px-5 py-2 rounded-full">
+
+Report Damage
+
+</span>
+
+<h2
+class="text-5xl font-bold mt-6">
+
+Submit Crop
+
+<span class="text-green-400">
+
+Damage Report
+
+</span>
+
+</h2>
+
+<p
+class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+Provide accurate information to help us process your report faster.
+
+</p>
+
+</div>
+
+<form id="cropLossForm">
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<input
+type="text"
+placeholder="Farmer Name"
+required
+class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+
+<input
+type="tel"
+placeholder="Phone Number"
+required
+class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+
+<input
+type="text"
+placeholder="Village"
+required
+class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+
+<input
+type="text"
+placeholder="Crop Name"
+required
+class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+
+<select
+required
+class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+
+<option value="">
+Select Damage Type
+</option>
+
+<option>Flood</option>
+<option>Drought</option>
+<option>Cyclone</option>
+<option>Pest Attack</option>
+<option>Disease</option>
+
+</select>
+
+<select
+required
+class="bg-slate-900 p-4 rounded-xl border border-slate-700">
+
+<option value="">
+Damage Severity
+</option>
+
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+
+</select>
+
+</div>
+
+<!-- Upload Image -->
+
+<div class="mt-6">
+
+<label
+class="block mb-3 text-slate-300">
+
+Upload Crop Damage Image
+
+</label>
+
+<input
+id="damageImage"
+type="file"
+accept="image/*"
+onchange="previewDamageImage(event)"
+class="bg-slate-900 p-4 rounded-xl border border-slate-700 w-full">
+
+</div>
+
+<!-- Preview -->
+
+<div class="mt-6">
+
+<img
+id="damagePreview"
+src=""
+class="hidden rounded-2xl w-64 h-48 object-cover border border-slate-700">
+
+</div>
+
+<!-- Description -->
+
+<textarea
+placeholder="Describe the crop damage..."
+required
+class="bg-slate-900 p-4 rounded-xl border border-slate-700 w-full h-40 mt-6">
+
+</textarea>
+
+<button
+type="submit"
+class="bg-green-500 hover:bg-green-600 px-10 py-4 rounded-xl mt-8 transition">
+
+Submit Report
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SUCCESS MODAL -->
+
+<div
+id="cropSuccessModal"
+class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+
+<div
+class="glass p-10 rounded-3xl text-center max-w-md w-full">
+
+<div class="text-7xl">
+
+✅
+
+</div>
+
+<h2 class="text-3xl font-bold mt-4">
+
+Report Submitted
+
+</h2>
+
+<p class="text-slate-400 mt-4">
+
+Your crop damage report has been received.
+
+</p>
+
+<p
+id="reportId"
+class="text-green-400 mt-4 font-bold">
+
+</p>
+
+<button
+onclick="closeCropSuccessModal()"
+class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-xl mt-6">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<!-- GOVERNMENT ASSISTANCE -->
+
+<section id="assistance" class="pb-28">
+
+<div class="container mx-auto px-6">
+
+<div class="text-center mb-16">
+
+<span
+class="bg-green-500/20 text-green-400 px-5 py-2 rounded-full">
+
+Farmer Support
+
+</span>
+
+<h2
+class="text-5xl font-bold mt-6">
+
+Government Assistance
+
+<span class="text-green-400">
+
+& Insurance
+
+</span>
+
+</h2>
+
+<p
+class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+Explore available support programs, crop insurance and compensation schemes.
+
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<!-- Crop Insurance -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-3 transition">
+
+<div
+class="w-24 h-24 mx-auto rounded-full bg-green-500/20 flex items-center justify-center">
+
+<i class="bi bi-shield-check text-5xl text-green-400"></i>
+
+</div>
+
+<h3
+class="text-2xl font-bold mt-6">
+
+Crop Insurance
+
+</h3>
+
+<p
+class="text-slate-400 mt-4">
+
+Financial protection against crop loss caused by natural disasters.
+
+</p>
+
+<button
+class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-xl mt-6">
+
+Learn More
+
+</button>
+
+</div>
+
+<!-- Compensation -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-3 transition">
+
+<div
+class="w-24 h-24 mx-auto rounded-full bg-green-500/20 flex items-center justify-center">
+
+<i class="bi bi-cash-stack text-5xl text-green-400"></i>
+
+</div>
+
+<h3
+class="text-2xl font-bold mt-6">
+
+Compensation
+
+</h3>
+
+<p
+class="text-slate-400 mt-4">
+
+Eligible farmers may receive compensation for verified crop damage.
+
+</p>
+
+<button
+class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-xl mt-6">
+
+Learn More
+
+</button>
+
+</div>
+
+<!-- Relief Programs -->
+
+<div
+class="glass p-8 rounded-3xl text-center hover:-translate-y-3 transition">
+
+<div
+class="w-24 h-24 mx-auto rounded-full bg-green-500/20 flex items-center justify-center">
+
+<i class="bi bi-building text-5xl text-green-400"></i>
+
+</div>
+
+<h3
+class="text-2xl font-bold mt-6">
+
+Relief Programs
+
+</h3>
+
+<p
+class="text-slate-400 mt-4">
+
+Government relief initiatives for farmers affected by severe losses.
+
+</p>
+
+<button
+class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-xl mt-6">
+
+Learn More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FINAL CTA SECTION -->
+
+<section class="pb-28">
+
+<div class="container mx-auto px-6">
+
+<div
+class="glass rounded-[40px] p-16 text-center relative overflow-hidden">
+
+<!-- Glow Effect -->
+
+<div
+class="absolute -top-20 -left-20 w-72 h-72 bg-green-500/10 blur-[120px] rounded-full">
+</div>
+
+<div
+class="absolute -bottom-20 -right-20 w-72 h-72 bg-green-500/10 blur-[120px] rounded-full">
+</div>
+
+<div class="relative z-10">
+
+<span
+class="bg-red-500/20 text-red-400 px-5 py-2 rounded-full">
+
+Need Immediate Help?
+
+</span>
+
+<h2
+class="text-5xl md:text-6xl font-bold mt-8">
+
+Report Damage &
+
+<span class="text-green-400">
+
+Get Support
+
+</span>
+
+</h2>
+
+<p
+class="text-slate-400 text-lg mt-6 max-w-3xl mx-auto">
+
+Submit your crop loss report today and connect with
+government assistance programs, insurance support
+and relief initiatives.
+
+</p>
+
+<!-- Support Highlights -->
+
+<div
+class="grid md:grid-cols-3 gap-8 mt-12">
+
+<div>
+
+<div class="text-5xl">
+
+📋
+
+</div>
+
+<h3 class="text-2xl font-bold mt-4">
+
+Easy Reporting
+
+</h3>
+
+</div>
+
+<div>
+
+<div class="text-5xl">
+
+🛡️
+
+</div>
+
+<h3 class="text-2xl font-bold mt-4">
+
+Insurance Support
+
+</h3>
+
+</div>
+
+<div>
+
+<div class="text-5xl">
+
+🤝
+
+</div>
+
+<h3 class="text-2xl font-bold mt-4">
+
+Government Assistance
+
+</h3>
+
+</div>
+
+</div>
+
+<!-- Buttons -->
+
+<div
+class="flex flex-wrap justify-center gap-6 mt-12">
+
+<a
+href="#report-form"
+class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full transition">
+
+Report Now
+
+</a>
+
+<a
+href="contact.html"
+class="border border-green-500 hover:bg-green-500 px-8 py-4 rounded-full transition">
+
+Contact Support
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-slate-900 border-t border-slate-800 pt-16">
+
+<div class="container mx-auto px-6">
+
+<div class="grid md:grid-cols-4 gap-10">
+
+<!-- Brand -->
+
+<div>
+
+<h2 class="text-3xl font-bold text-green-400">
+
+🌾 AgriConnect
+
+</h2>
+
+<p class="text-slate-400 mt-5 leading-7">
+
+Helping farmers report crop damage and connect with support programs quickly.
+
+</p>
+
+</div>
+
+<!-- Quick Links -->
+
+<div>
+
+<h3 class="text-xl font-bold mb-5">
+
+Quick Links
+
+</h3>
+
+<ul class="space-y-3 text-slate-400">
+
+<li>
+<a href="index.html" class="hover:text-green-400">
+Home
+</a>
+</li>
+
+<li>
+<a href="equipment.html" class="hover:text-green-400">
+Equipment
+</a>
+</li>
+
+<li>
+<a href="labour.html" class="hover:text-green-400">
+Labour
+</a>
+</li>
+
+<li>
+<a href="crop-loss.html" class="hover:text-green-400">
+Crop Loss
+</a>
+</li>
+
+<li>
+<a href="contact.html" class="hover:text-green-400">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- Support -->
+
+<div>
+
+<h3 class="text-xl font-bold mb-5">
+
+Support
+
+</h3>
+
+<ul class="space-y-3 text-slate-400">
+
+<li>📋 Damage Reporting</li>
+
+<li>🛡️ Insurance Support</li>
+
+<li>🤝 Government Schemes</li>
+
+<li>📞 24/7 Assistance</li>
+
+</ul>
+
+</div>
+
+<!-- Contact -->
+
+<div>
+
+<h3 class="text-xl font-bold mb-5">
+
+Contact Info
+
+</h3>
+
+<div class="space-y-3 text-slate-400">
+
+<p>
+
+<i class="bi bi-envelope-fill text-green-400"></i>
+
+support@agriconnect.com
+
+</p>
+
+<p>
+
+<i class="bi bi-telephone-fill text-green-400"></i>
+
++91 9876543210
+
+</p>
+
+<p>
+
+<i class="bi bi-geo-alt-fill text-green-400"></i>
+
+India
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+
+<div
+class="border-t border-slate-800 mt-12 py-6 text-center">
+
+<p class="text-slate-500">
+
+© 2026 AgriConnect | Crop Loss Management System
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

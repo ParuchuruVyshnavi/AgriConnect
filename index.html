@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AgriConnect | Smart Agriculture Platform</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-950 text-white overflow-x-hidden">
+
+  <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800">
+
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+      <h1 class="text-3xl font-bold text-green-400">
+        🌾 AgriConnect
+      </h1>
+
+      <!-- Desktop Menu -->
+
+      <ul class="hidden lg:flex gap-8 text-slate-300">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="labour.html">Labour</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="water-sharing.html">Water Sharing</a></li>
+        <li><a href="knowledge.html">Knowledge Hub</a></li>
+        <li><a href="crop-loss.html">Crop Loss</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+
+      <!-- Mobile Menu Button -->
+
+      <button id="menuBtn" class="lg:hidden text-3xl text-white">
+
+        <i class="bi bi-list"></i>
+
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-slate-900 border-t border-slate-800">
+
+      <ul class="flex flex-col p-6 gap-4 text-white">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="labour.html">Labour</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="water-sharing.html">Water Sharing</a></li>
+        <li><a href="knowledge.html">Knowledge Hub</a></li>
+        <li><a href="crop-loss.html">Crop Loss</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <section class="min-h-screen flex items-center relative overflow-hidden">
+
+    <!-- Background Glow -->
+
+    <div class="absolute top-20 left-10 w-72 h-72 bg-green-500/20 blur-[120px] rounded-full">
+    </div>
+
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/10 blur-[150px] rounded-full">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT CONTENT -->
+
+        <div data-aos="fade-right">
+
+          <span class="inline-block bg-green-500/20 text-green-400 px-5 py-2 rounded-full border border-green-500/30">
+
+            🌾 India's Smart Agriculture Platform
+
+          </span>
+
+          <h1 class="text-5xl md:text-7xl font-bold leading-tight mt-8">
+
+            Connecting
+
+            <span class="text-green-400">
+
+              Farmers,
+
+            </span>
+
+            Resources &
+
+            <span class="text-green-400">
+
+              Technology
+
+            </span>
+
+          </h1>
+
+          <p class="text-slate-400 text-lg mt-8 max-w-xl leading-8">
+
+            AgriConnect helps farmers rent equipment,
+            find labour, share water resources, report crop loss,
+            access agricultural knowledge and connect with buyers —
+            all from a single platform.
+
+          </p>
+
+          <div class="flex flex-wrap gap-4 mt-10">
+
+            <a href="#services" class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-semibold transition">
+
+              Explore Platform
+
+            </a>
+
+            <a href="#about"
+              class="border border-green-500 hover:bg-green-500 hover:text-white px-8 py-4 rounded-full transition">
+
+              Learn More
+
+            </a>
+
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+
+        <div data-aos="fade-left" class="relative flex justify-center">
+
+          <div class="absolute w-[500px] h-[500px] rounded-full bg-green-500/20 blur-[120px]">
+          </div>
+          <div
+            class="relative w-[450px] h-[450px] rounded-full overflow-hidden border-4 border-green-500/30 shadow-[0_0_60px_rgba(34,197,94,0.4)]">
+
+            <img src="images/farmer.webp" alt="Farmer" class="w-full h-full object-cover">
+
+          </div>
+
+          <!-- FLOATING CARD 1 -->
+
+          <div class="absolute top-10 -left-10 glass px-5 py-3 rounded-2xl animate-bounce">
+
+            🚜 Equipment Rental
+
+          </div>
+
+          <!-- FLOATING CARD 2 -->
+
+          <div class="absolute top-24 -right-10 glass px-5 py-3 rounded-2xl animate-bounce">
+
+
+            💧 Water Sharing
+
+          </div>
+
+          <!-- FLOATING CARD 3 -->
+
+          <div class="absolute bottom-20 -left-6 glass px-5 py-3 rounded-2xl animate-bounce">
+
+            📚 Knowledge Hub
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="about" class="relative py-32 bg-fixed bg-center bg-cover"
+    style="background-image:url('images/background.jpg');">
+
+    <!-- Dark Overlay -->
+
+    <div class="absolute inset-0 bg-slate-950/80">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT CONTENT -->
+
+        <div data-aos="fade-right">
+
+          <span class="bg-green-500/20 text-green-400 px-5 py-2 rounded-full">
+
+            About AgriConnect
+
+          </span>
+
+          <h2 class="text-5xl md:text-6xl font-bold mt-8">
+
+            Transforming
+
+            <span class="text-green-400">
+
+              Agriculture
+
+            </span>
+
+            Through Innovation
+
+          </h2>
+
+          <p class="text-slate-300 mt-8 text-lg leading-8">
+
+            AgriConnect is an integrated digital platform
+            designed to solve real-world farming challenges.
+
+            From equipment rental and labour hiring
+            to water sharing, crop loss reporting,
+            marketplace access and agricultural education,
+            everything is available in one place.
+
+          </p>
+
+          <p class="text-slate-400 mt-6 leading-8">
+
+            Our mission is to empower farmers with
+            technology, improve productivity and build
+            a stronger agricultural community.
+
+          </p>
+
+          <a href="#services"
+            class="inline-block mt-10 bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full transition">
+
+            Explore Services
+
+          </a>
+
+        </div>
+
+        <!-- RIGHT SIDE CARDS -->
+
+        <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+
+          <div class="glass p-8 rounded-3xl">
+
+            <h3 class="text-4xl font-bold text-green-400">
+
+              10K+
+
+            </h3>
+
+            <p class="mt-3">
+
+              Farmers Connected
+
+            </p>
+
+          </div>
+
+          <div class="glass p-8 rounded-3xl">
+
+            <h3 class="text-4xl font-bold text-green-400">
+
+              500+
+
+            </h3>
+
+            <p class="mt-3">
+
+              Equipment Listed
+
+            </p>
+
+          </div>
+
+          <div class="glass p-8 rounded-3xl">
+
+            <h3 class="text-4xl font-bold text-green-400">
+
+              150+
+
+            </h3>
+
+            <p class="mt-3">
+
+              Villages Reached
+
+            </p>
+
+          </div>
+
+          <div class="glass p-8 rounded-3xl">
+
+            <h3 class="text-4xl font-bold text-green-400">
+
+              24/7
+
+            </h3>
+
+            <p class="mt-3">
+
+              Support Available
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="services" class="py-28">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center mb-20">
+
+        <span class="bg-green-500/20 text-green-400 px-5 py-2 rounded-full">
+
+          Our Services
+
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6">
+
+          Everything Farmers Need
+
+          <span class="text-green-400">
+
+            In One Platform
+
+          </span>
+
+        </h2>
+
+        <p class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+          AgriConnect provides essential farming services
+          to help farmers save time, reduce costs and
+          improve productivity.
+
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Equipment -->
+
+        <a href="equipment.html" class="group">
+
+          <div class="glass p-8 rounded-3xl hover:-translate-y-3 transition duration-300 h-full">
+
+            <i class="bi bi-truck-front-fill text-6xl text-green-400"></i>
+            </i>
+
+            <h3 class="text-2xl font-bold mt-6">
+
+              Equipment Rental
+
+            </h3>
+
+            <p class="text-slate-400 mt-4">
+
+              Rent tractors, harvesters, seeders and
+              agricultural machinery easily.
+
+            </p>
+
+            <div class="mt-6 text-green-400">
+
+              Explore →
+
+            </div>
+
+          </div>
+
+        </a>
+
+        <!-- Labour -->
+
+        <a href="labour.html" class="group">
+
+          <div class="glass p-8 rounded-3xl hover:-translate-y-3 transition duration-300 h-full">
+
+            <i class="bi bi-people-fill text-6xl text-green-400">
+            </i>
+
+            <h3 class="text-2xl font-bold mt-6">
+
+              Labour Connect
+
+            </h3>
+
+            <p class="text-slate-400 mt-4">
+
+              Find skilled farm workers and seasonal labour quickly.
+
+            </p>
+
+            <div class="mt-6 text-green-400">
+
+              Explore →
+
+            </div>
+
+          </div>
+
+        </a>
+
+        <!-- Water Sharing -->
+
+        <a href="water-sharing.html" class="group">
+
+          <div class="glass p-8 rounded-3xl hover:-translate-y-3 transition duration-300 h-full">
+
+            <i class="bi bi-droplet-fill text-6xl text-green-400">
+            </i>
+
+            <h3 class="text-2xl font-bold mt-6">
+
+              Water Sharing
+
+            </h3>
+
+            <p class="text-slate-400 mt-4">
+
+              Connect with nearby farmers and share water resources.
+
+            </p>
+
+            <div class="mt-6 text-green-400">
+
+              Explore →
+
+            </div>
+
+          </div>
+
+        </a>
+
+        <!-- Marketplace -->
+
+        <a href="marketplace.html" class="group">
+
+          <div class="glass p-8 rounded-3xl hover:-translate-y-3 transition duration-300 h-full">
+
+            <i class="bi bi-shop text-6xl text-green-400">
+            </i>
+
+            <h3 class="text-2xl font-bold mt-6">
+
+              Marketplace
+
+            </h3>
+
+            <p class="text-slate-400 mt-4">
+
+              Buy and sell crops, seeds, farm products and equipment.
+
+            </p>
+
+            <div class="mt-6 text-green-400">
+
+              Explore →
+
+            </div>
+
+          </div>
+
+        </a>
+
+        <!-- Crop Loss -->
+
+        <a href="crop-loss.html" class="group">
+
+          <div class="glass p-8 rounded-3xl hover:-translate-y-3 transition duration-300 h-full">
+
+            <i class="bi bi-exclamation-triangle-fill text-6xl text-green-400">
+            </i>
+
+            <h3 class="text-2xl font-bold mt-6">
+
+              Crop Loss Reports
+
+            </h3>
+
+            <p class="text-slate-400 mt-4">
+
+              Report crop damage and access support programs.
+
+            </p>
+
+            <div class="mt-6 text-green-400">
+
+              Explore →
+
+            </div>
+
+          </div>
+
+        </a>
+
+        <!-- Knowledge Hub -->
+
+        <a href="knowledge.html" class="group">
+
+          <div class="glass p-8 rounded-3xl hover:-translate-y-3 transition duration-300 h-full">
+
+            <i class="bi bi-book-fill text-6xl text-green-400">
+            </i>
+
+            <h3 class="text-2xl font-bold mt-6">
+
+              Knowledge Hub
+
+            </h3>
+
+            <p class="text-slate-400 mt-4">
+
+              Learn farming techniques, irrigation and government schemes.
+
+            </p>
+
+            <div class="mt-6 text-green-400">
+
+              Explore →
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-28 bg-slate-900/40">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center mb-20">
+
+        <span class="bg-green-500/20 text-green-400 px-5 py-2 rounded-full">
+
+          Why Choose Us
+
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6">
+
+          Why Farmers Trust
+
+          <span class="text-green-400">
+
+            AgriConnect
+
+          </span>
+
+        </h2>
+
+        <p class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+          Built specifically for farmers to simplify daily agricultural challenges
+          through technology and community support.
+
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- CARD 1 -->
+
+        <div class="glass p-8 rounded-3xl text-center hover:-translate-y-2 transition">
+
+          <div class="w-20 h-20 mx-auto rounded-full bg-green-500/20 flex items-center justify-center">
+
+            <i class="bi bi-lightning-charge-fill text-4xl text-green-400"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+
+            Fast Access
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Find equipment, labour and farming resources instantly.
+
+          </p>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="glass p-8 rounded-3xl text-center hover:-translate-y-2 transition">
+
+          <div class="w-20 h-20 mx-auto rounded-full bg-green-500/20 flex items-center justify-center">
+
+            <i class="bi bi-shield-check text-4xl text-green-400"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+
+            Reliable Support
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Trusted by farmers for crop loss and emergency assistance.
+
+          </p>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="glass p-8 rounded-3xl text-center hover:-translate-y-2 transition">
+
+          <div class="w-20 h-20 mx-auto rounded-full bg-green-500/20 flex items-center justify-center">
+
+            <i class="bi bi-people-fill text-4xl text-green-400"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+
+            Farmer Community
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Connect and collaborate with farmers across regions.
+
+          </p>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="glass p-8 rounded-3xl text-center hover:-translate-y-2 transition">
+
+          <div class="w-20 h-20 mx-auto rounded-full bg-green-500/20 flex items-center justify-center">
+
+            <i class="bi bi-phone-fill text-4xl text-green-400"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+
+            Mobile Friendly
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Access all services from any device, anytime.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="py-28">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <span class="bg-green-500/20 text-green-400 px-5 py-2 rounded-full">
+
+          Testimonials
+
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6">
+
+          What Farmers Say About
+
+          <span class="text-green-400">
+
+            AgriConnect
+
+          </span>
+
+        </h2>
+
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+
+        <div class="glass p-12 rounded-[40px] text-center relative overflow-hidden">
+
+          <!-- Farmer Image -->
+
+          <img id="farmerImage" src="images/farmer1.jpg"
+            class="w-28 h-28 rounded-full object-cover mx-auto border-4 border-green-500 shadow-[0_0_30px_rgba(34,197,94,0.5)]">
+
+          <!-- Stars -->
+
+          <div class="text-yellow-400 text-2xl mt-6">
+
+            ★★★★★
+
+          </div>
+
+          <!-- Review -->
+
+          <p id="testimonialText" class="text-xl text-slate-300 mt-8 leading-9">
+
+            "AgriConnect helped me find labour during harvest season. The process was quick and easy."
+
+          </p>
+
+          <!-- Name -->
+
+          <h3 id="farmerName" class="text-2xl font-bold mt-8">
+
+            Ramesh Kumar
+
+          </h3>
+
+          <p id="farmerLocation" class="text-green-400">
+
+            Vijayawada
+
+          </p>
+
+          <!-- Buttons -->
+
+          <div class="flex justify-center gap-4 mt-10">
+
+            <button onclick="prevTestimonial()"
+              class="w-12 h-12 rounded-full bg-slate-800 hover:bg-green-500 transition">
+
+              <i class="bi bi-chevron-left"></i>
+
+            </button>
+
+            <button onclick="nextTestimonial()"
+              class="w-12 h-12 rounded-full bg-slate-800 hover:bg-green-500 transition">
+
+              <i class="bi bi-chevron-right"></i>
+
+            </button>
+
+          </div>
+
+          <!-- Dots -->
+
+          <div class="flex justify-center gap-3 mt-8">
+
+            <div class="dot active-dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-28">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center mb-20">
+
+        <span class="bg-green-500/20 text-green-400 px-5 py-2 rounded-full">
+
+          Latest Agriculture Updates
+
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6">
+
+          Stay Updated With
+
+          <span class="text-green-400">
+
+            Agriculture Trends
+
+          </span>
+
+        </h2>
+
+        <p class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+          Get the latest updates, farming tips and important agricultural information.
+
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Weather Alerts -->
+
+        <div class="glass p-8 rounded-3xl hover:-translate-y-2 transition">
+
+          <div class="w-20 h-20 rounded-full bg-blue-500/20 flex items-center justify-center">
+
+            🌦
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+
+            Weather Alerts
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Get weather updates, rainfall alerts and climate information.
+
+          </p>
+
+        </div>
+
+        <!-- Farming Technologies -->
+
+        <div class="glass p-8 rounded-3xl hover:-translate-y-2 transition">
+
+          <div class="w-20 h-20 rounded-full bg-green-500/20 flex items-center justify-center">
+
+            🚜
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+
+            New Farming Technologies
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Discover modern equipment, AI tools and smart farming methods.
+
+          </p>
+
+        </div>
+
+        <!-- Government Schemes -->
+
+        <div class="glass p-8 rounded-3xl hover:-translate-y-2 transition">
+
+          <div class="w-20 h-20 rounded-full bg-yellow-500/20 flex items-center justify-center">
+
+            📢
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+
+            Government Schemes
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Stay informed about subsidies, PM-KISAN and farmer welfare programs.
+
+          </p>
+
+        </div>
+
+        <!-- Seasonal Tips -->
+
+        <div class="glass p-8 rounded-3xl hover:-translate-y-2 transition">
+
+          <div class="w-20 h-20 rounded-full bg-emerald-500/20 flex items-center justify-center">
+
+            🌱
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-6">
+
+            Seasonal Crop Tips
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Learn the best farming practices for each crop season.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-28 bg-slate-900/40">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center mb-20">
+
+        <span class="bg-green-500/20 text-green-400 px-5 py-2 rounded-full">
+
+          How It Works
+
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6">
+
+          Get Started In
+
+          <span class="text-green-400">
+
+            3 Simple Steps
+
+          </span>
+
+        </h2>
+
+        <p class="text-slate-400 mt-6 max-w-3xl mx-auto">
+
+          Using AgriConnect is simple. Access farming services,
+          connect with resources and grow your farm efficiently.
+
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- STEP 1 -->
+
+        <div class="glass p-10 rounded-3xl text-center relative">
+
+          <div class="w-20 h-20 mx-auto rounded-full bg-green-500 flex items-center justify-center text-3xl font-bold">
+
+            1
+
+          </div>
+
+          <h3 class="text-3xl font-bold mt-8">
+
+            Choose a Service
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Select Equipment Rental, Labour Connect,
+            Water Sharing, Marketplace or Knowledge Hub.
+
+          </p>
+
+        </div>
+
+        <!-- STEP 2 -->
+
+        <div class="glass p-10 rounded-3xl text-center relative">
+
+          <div class="w-20 h-20 mx-auto rounded-full bg-green-500 flex items-center justify-center text-3xl font-bold">
+
+            2
+
+          </div>
+
+          <h3 class="text-3xl font-bold mt-8">
+
+            Connect & Explore
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Find resources, workers, equipment,
+            buyers and farming information.
+
+          </p>
+
+        </div>
+
+        <!-- STEP 3 -->
+
+        <div class="glass p-10 rounded-3xl text-center relative">
+
+          <div class="w-20 h-20 mx-auto rounded-full bg-green-500 flex items-center justify-center text-3xl font-bold">
+
+            3
+
+          </div>
+
+          <h3 class="text-3xl font-bold mt-8">
+
+            Grow Your Farm
+
+          </h3>
+
+          <p class="text-slate-400 mt-4">
+
+            Increase productivity, reduce costs
+            and improve farming outcomes.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="py-28">
+
+    <div class="container mx-auto px-6">
+
+      <div class="glass rounded-[40px] p-16 text-center border border-green-500/20 relative overflow-hidden">
+
+        <!-- Glow Effects -->
+
+        <div class="absolute -top-20 -left-20 w-64 h-64 bg-green-500/10 blur-[120px] rounded-full">
+        </div>
+
+        <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-green-500/10 blur-[120px] rounded-full">
+        </div>
+
+        <div class="relative z-10">
+
+          <span class="bg-green-500/20 text-green-400 px-5 py-2 rounded-full">
+
+            Join AgriConnect Today
+
+          </span>
+
+          <h2 class="text-5xl md:text-6xl font-bold mt-8">
+
+            Ready To Grow
+
+            <span class="text-green-400">
+
+              Smarter?
+
+            </span>
+
+          </h2>
+
+          <p class="text-slate-400 text-lg mt-6 max-w-3xl mx-auto">
+
+            Access farming equipment, connect with labour,
+            share resources and learn modern agricultural practices
+            through one powerful platform.
+
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-6 mt-10">
+
+            <a href="#services" class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-semibold transition">
+
+              Explore Services
+
+            </a>
+
+            <a href="contact.html" class="border border-green-500 px-8 py-4 rounded-full hover:bg-green-500 transition">
+
+              Contact Us
+
+            </a>
+
+          </div>
+
+          <!-- Trust Badges -->
+
+          <div class="flex flex-wrap justify-center gap-10 mt-12 text-slate-400">
+
+            <div>🚜 Equipment Rental</div>
+
+            <div>👨‍🌾 Labour Connect</div>
+
+            <div>💧 Water Sharing</div>
+
+            <div>📚 Knowledge Hub</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="bg-slate-900 border-t border-slate-800 pt-20">
+
+    <div class="container mx-auto px-6">
+
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+        <!-- Brand -->
+
+        <div>
+
+          <h2 class="text-3xl font-bold text-green-400">
+
+            🌾 AgriConnect
+
+          </h2>
+
+          <p class="text-slate-400 mt-6 leading-8">
+
+            Empowering farmers through technology,
+            resources and community support.
+
+          </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Quick Links
+
+          </h3>
+
+          <ul class="space-y-4 text-slate-400">
+
+            <li>
+              <a href="index.html" class="hover:text-green-400">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#about" class="hover:text-green-400">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="#services" class="hover:text-green-400">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="hover:text-green-400">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Services -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Our Services
+
+          </h3>
+
+          <ul class="space-y-4 text-slate-400">
+
+            <li>
+              <a href="equipment.html" class="hover:text-green-400">
+                Equipment Rental
+              </a>
+            </li>
+
+            <li>
+              <a href="labour.html" class="hover:text-green-400">
+                Labour Connect
+              </a>
+            </li>
+
+            <li>
+              <a href="water-sharing.html" class="hover:text-green-400">
+                Water Sharing
+              </a>
+            </li>
+
+            <li>
+              <a href="marketplace.html" class="hover:text-green-400">
+                Marketplace
+              </a>
+            </li>
+
+            <li>
+              <a href="crop-loss.html" class="hover:text-green-400">
+                Crop Loss Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="knowledge.html" class="hover:text-green-400">
+                Knowledge Hub
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Contact Info -->
+
+        <div>
+
+          <h3 class="text-xl font-bold mb-6">
+
+            Contact Info
+
+          </h3>
+
+          <div class="space-y-4 text-slate-400">
+
+            <p>
+              <i class="bi bi-geo-alt-fill text-green-400"></i>
+              India
+            </p>
+
+            <p>
+              <i class="bi bi-envelope-fill text-green-400"></i>
+              support@agriconnect.com
+            </p>
+
+            <p>
+              <i class="bi bi-telephone-fill text-green-400"></i>
+              +91 9876543210
+            </p>
+
+            <p>
+              <i class="bi bi-clock-fill text-green-400"></i>
+              Mon - Sat : 9 AM - 6 PM
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer -->
+
+      <div class="border-t border-slate-800 mt-16 py-8 flex flex-col md:flex-row justify-between items-center">
+
+        <p class="text-slate-500">
+
+          © 2026 AgriConnect. All Rights Reserved.
+
+        </p>
+
+        <p class="text-slate-500 mt-4 md:mt-0">
+
+          Made with ❤️ for Farmers
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()"
+    class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 text-white text-2xl shadow-lg hidden z-50">
+
+    <i class="bi bi-arrow-up"></i>
+
+  </button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
